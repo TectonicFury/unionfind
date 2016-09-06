@@ -1,10 +1,8 @@
-all: clean Percolation
+all: Percolation clean
+        javac-algs4 Percolation.java PercolationStats.java
+        java-algs4 PercolationStats 200 200
 
 clean:
-	rm -f Percolation.class
-
-Percolation:
-	javac-algs4 Percolation.java
-	java-algs4 Percolation
+        rm -f *.class
 
 
